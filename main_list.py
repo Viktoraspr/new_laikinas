@@ -31,6 +31,7 @@ class Cat(Animal):
 dog = Dog('Rikis', 8)
 cat = Cat('Muse', 7, True)
 print(cat.jump)
+print(cat.name)
 
 animal = Animal('Vardas', 10)
 
