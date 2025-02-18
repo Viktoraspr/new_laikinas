@@ -1,0 +1,18 @@
+"""
+https://en.wikipedia.org/wiki/London
+
+- suskaiciuoti bendra raidziu skaciu
+- suskaiciuoti didziuju raidziu skaiciu
+- suskaiciuoti mazu raidziu skaiciu
+- suskaiciuoti lyginiu skaitmenys kvadratu suma
+- sudauginti nelyginius skaitmenys
+- suskaiciuoti kitus simbolius
+
+
+rezultata atsausdinti dicte
+
+{
+'lyginis': 111
+...
+}
+"""

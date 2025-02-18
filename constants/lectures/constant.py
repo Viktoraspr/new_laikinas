@@ -1,0 +1,3 @@
+NAMES = {
+    'Viktoras': '"destytojas',
+}
