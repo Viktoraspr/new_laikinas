@@ -50,3 +50,50 @@ class Vehicle:
 
         cost_per_km = self.fixed_costs + self.annual_mileage * self.fuel_consumption/100 * fuel_cost
         return cost_per_km
+
+
+class Car(Vehicle):
+    def __init__(self, annual_mileage: int = 0, license_plate: str = "", fuel_type: str = "gasoline",
+                 fuel_consumption: int = 5, fixed_costs: int = 0, inspection_date="",
+                 driver_category_required: set = {"B"}):
+        super().__init__()
+        print("Fast run")
+
+
+class Bus(Vehicle):
+    def __init__(self,
+                 seating_capacity: int = 15
+                 ):
+        super().__init__()
+        print("Yellow run")
+        self.seating_capacity = seating_capacity
+
+
+    def calculate_bus_for_n_passengers(self):
+        pass
+
+    def calculate_estimate_cost(self):
+        pass
+
+
+class Truck(Vehicle):
+    def __init__(self,
+                 cargo_capacity: int = 1000,
+                 wagon_option: bool = False,
+                 wagon_capacity: int = 0,
+                 ):
+        super().__init__()
+        print("Loaded run")
+        self.cargo_capacity = cargo_capacity
+        self.wagon_option = wagon_option
+        self.wagon_capacity = wagon_capacity
+
+
+car = Car(
+    annual_mileage=1,
+    fuel_type="petrol",
+    fuel_consumption=5,
+    fixed_costs=0,
+    inspection_date="",
+    driver_category_required={"B"},
+)

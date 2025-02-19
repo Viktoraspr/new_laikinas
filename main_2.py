@@ -1,4 +1,10 @@
-from main import TextManipulation
+"""
+github mr
+dataclass -> dict
 
+"""
 
-a = TextManipulation()
+data = {
+    1: 'vienas',
+    2: 'du',
+}
