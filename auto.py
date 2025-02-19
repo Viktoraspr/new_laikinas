@@ -1,3 +1,7 @@
+from datetime import datetime
+from math import ceil
+
+
 class Driver:
     def drive_safe(self):
         print('This driver drive car very atsargiai')
@@ -8,11 +12,16 @@ class Auto:
 
 
 class Car(Auto):
-    def __init__(self, driver: Driver):
+    def __init__(self, driver: Driver, new_date: datetime):
         self.driver = driver
+        self.date = new_date
+        self.seat = 30
+
+    def calculate_busses(self, number=181):
+        return ceil(number // 30)
 
     def do_something(self):
-        self.driver.drive_safe()
+        self.bus_needed()
 
 
 class Bus(Auto):
@@ -23,5 +32,3 @@ class Truck(Auto):
     pass
 
 
-driver = Driver()
-car = Car(driver=driver)
