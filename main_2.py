@@ -6,5 +6,5 @@ dataclass -> dict
 
 data = {
     1: 'vienas',
-    2: 'du',
+    2: 'du'
 }
