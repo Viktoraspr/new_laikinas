@@ -15,6 +15,7 @@ class Driver:
         self.binging_issues = binging_issues
 
 
+
 class Vehicle:
     def __init__(self,
                  annual_mileage: int = 0,
